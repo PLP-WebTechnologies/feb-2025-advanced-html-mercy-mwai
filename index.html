@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Contact Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Information</h1>
+    </header>
+
+    <section>
+      <h2>Ordered List (Roman Numerals)</h2>
+      <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>External Image</h2>
+      <img
+        src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+        alt="A beautiful landscape"
+      />
+    </section>
+
+    <section>
+      <h2>Contact Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>123 Main St</td>
+            <td>555-1234</td>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak Ave</td>
+            <td>555-5678</td>
+            <td>jane.smith@example.com</td>
+          </tr>
+          <tr>
+            <td>David Lee</td>
+            <td>789 Pine Ln</td>
+            <td>555-9012</td>
+            <td>david.lee@example.com</td>
+          </tr>
+          <tr>
+            <td>Emily Chen</td>
+            <td>101 Elm Rd</td>
+            <td>555-3456</td>
+            <td>emily.chen@example.com</td>
+          </tr>
+          <tr>
+            <td>Michael Brown</td>
+            <td>202 Maple Dr</td>
+            <td>555-7890</td>
+            <td>michael.brown@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <form>
+        <div>
+            <label for="first-name">Enter your first name: </label>
+            <input id="first-name" type="text" required/>
+        </div>
+      
+      <div>
+        <label for="last-name">Enter your last name: </label>
+        <input id="last-name" type="text" required/>
+      </div>
+      
+      <div>
+        <label for="email">Enter your Email:</label>
+        <input id="email" type="email" required />
+      </div>
+
+      <div>
+        <label for="new-password">Enter a new password:</label>
+        <input
+          id="new-password"
+          type="password"
+          pattern="[a-z0-5]{8,}"
+          required />
+      </div>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                </select>
+        </div>
+
+        <div>
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+        </div>
+
+        <div>
+            <p>Interests:</p>
+            <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+        </div>
+    </fieldset>
+      <div>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </body>
+</html>
